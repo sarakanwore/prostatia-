@@ -1,0 +1,20 @@
+site_name: PROSTATIA Stats Engine
+site_description: Documentation du backend du moteur statistique PROSTATIA
+site_url: https://example.com/prostatia-stats-engine
+repo_url: https://github.com/yourorg/PROSTATIA
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Ingestion: ingestion.md
+  - API Reference: api_reference.md
+  - Formules: formules.md
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true

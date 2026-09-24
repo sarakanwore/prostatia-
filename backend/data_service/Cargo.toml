@@ -1,0 +1,18 @@
+[package]
+name = "data_service"
+version = "1.0.0"
+edition = "2021"
+description = "STATIA Data Service - High performance data ingestion and schema extraction"
+
+[dependencies]
+axum = { version = "0.7", features = ["multipart"] }
+tokio = { version = "1.36", features = ["full"] }
+tower-http = { version = "0.5", features = ["cors", "trace", "fs"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+polars = { version = "0.37", features = ["lazy", "csv", "json"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+uuid = { version = "1.7", features = ["v4"] }
+calamine = "0.32"
+sqlx = { version = "0.7", features = ["runtime-tokio-rustls", "postgres", "uuid", "chrono"] }

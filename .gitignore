@@ -1,0 +1,46 @@
+# Global .gitignore for STATIA Monorepo
+
+# Node
+node_modules/
+dist/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.env
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Rust
+target/
+**/*.rs.bk
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Temporary scratch & extraction files
+pdf_content*.txt
+pdf_output.txt
+pptx_content.txt
+read_pdf*.*
+
+# Uploads & Data
+uploads/
+**/uploads/*
+
+
